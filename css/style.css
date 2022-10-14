@@ -383,11 +383,10 @@ body{
 
 .slider{
   background-color: #F8F6FA;
-  padding: 360px 0 310px;
+  padding: 360px 0 110px;
 }
 
 .slider__item{
-  max-width: 625px;
 }
 
 .slider__item-link{
@@ -395,6 +394,7 @@ body{
 }
 
 .slider__item-title{
+  max-width: 625px;
   font-weight: 700;
   font-size: 36px;
   line-height: 52px;
@@ -402,5 +402,78 @@ body{
 }
 
 .slider__item-text{
+  color: #373A39;
+  max-width: 625px;
+}
+
+.slick-dots{
+  display: flex;
+  padding-top: 180px;
+}
+
+.slick-dots li + li{
+  margin-left: 14px;
+}
+
+.slick-dots button{
+  font-size: 0;
+  border: none;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  background-color: #242121;
+  opacity: 0.4;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slick-active button{
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  transform: translateY(-2px);
+}
+
+.slick-prev,
+.slick-next{
+  border: none;
+  background-color: transparent;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-145px);
+}
+
+.slick-prev{
+  right: -80px;
+}
+
+.slick-next{
+  left: -80px;
+}
+
+.team{
+  padding: 120px 0 130px;
+}
+
+.team__inner{
+  display: flex;justify-content: space-between;
+  margin-top: 120px;
+}
+
+.team__item{
+  max-width: 370px;
+  text-align: center;
+}
+
+.team__title{
+  margin: 35px 0 12px;
+  font-family: 'Montserrat';
+  font-weight: 700;
+  line-height: 17px;
+  color: #333;
+}
+
+.team__prof{
+  line-height: 16px;
   color: #373A39;
 }
