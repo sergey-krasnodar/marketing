@@ -47,7 +47,9 @@ a[class]{
 font-family: 'Montserrat', sans-serif;
 font-family: 'Raleway', sans-serif; */
 body{
+  max-width: 1440px;
   min-height: 100vh;
+  margin: 0 auto;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   font-size: 14px;
@@ -377,4 +379,28 @@ body{
   line-height: 19px;
   color: #333;
   margin-top: 9px;
+}
+
+.slider{
+  background-color: #F8F6FA;
+  padding: 360px 0 310px;
+}
+
+.slider__item{
+  max-width: 625px;
+}
+
+.slider__item-link{
+  display: inline-block;
+}
+
+.slider__item-title{
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 52px;
+  color: #242121;
+}
+
+.slider__item-text{
+  color: #373A39;
 }
