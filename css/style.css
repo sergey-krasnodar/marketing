@@ -534,3 +534,122 @@ body{
   margin-top: 40px;
   color: #242121;
 }
+
+.partner{
+  padding: 70px 0 95px;
+}
+
+.partner__inner{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.conection{
+  padding: 145px 0 60px;
+  background-image: url(../images/map.jpg);
+  background-repeat: no-repeat;
+  background-size: 40%;
+  background-position: right center;
+}
+
+.conection__title{
+  margin-bottom: 63px;
+}
+
+.conection__form{
+  width: 570px;
+  margin-bottom: 140px;
+}
+
+.conection__form input,textarea{
+  display: block;
+  padding: 32px 0 16px;
+  border: none;
+  border-bottom: 2px solid #373A39;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #B8B8B8;
+}
+
+.conection__form textarea{
+  padding: 53px 0 136px;
+  margin-bottom: 140px;
+  resize: none;
+}
+
+.conection__form button{
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 13px;
+  letter-spacing: 2px;
+  color: #FFFFFF;
+  border: none;
+  padding: 17px 70px 15px;
+  background-color: #000;
+  cursor: pointer;
+}
+
+.footer__top{
+  padding: 110px 0 60px;
+  background-color: #000;
+  text-align: center;
+}
+
+.footer__logo{
+  display: inline-block;
+  margin-bottom: 75px;
+}
+
+.footer__social{
+  display: flex;
+  justify-content: center;
+}
+
+.footer__item{
+  padding: 0 15px;
+}
+
+.footer__link{
+  text-transform: uppercase;
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 15px;
+  color: #FFFFFF;
+  letter-spacing: 4px;
+  margin-bottom: 65px;
+}
+
+.address p, a{
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 32px;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.footer__angle{
+  display: inline-block;
+  margin-top: 57px;
+  cursor: pointer;
+}
+
+.footer__copy{
+  padding: 40px 0;
+  background-color: #2A2C2B;
+}
+
+.footer__copy-text{
+  text-align: center;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #ccc;
+}
+
