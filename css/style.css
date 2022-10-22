@@ -95,6 +95,10 @@ body{
   margin-top: 40px;
 }
 
+.menu__btn{
+  display: none;
+}
+
 .header__menu-list{
   display: flex;
 }
@@ -683,5 +687,65 @@ body{
   font-size: 12px;
   line-height: 16px;
   color: #ccc;
+}
+
+@media(max-width: 1200px){
+  .header__inner{
+    position: fixed;
+    left: 20px;
+    right: 20px;
+    z-index: 50;
+  }
+  .logo{
+    position: relative;
+    z-index: 2;
+  }
+  .header__menu-list{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    flex-direction: column;
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: none;
+    background-color: #000;
+    transform: translateY(-200%);
+    transition: all .6s;
+  }
+  .header__inner.header__inner--active .header__menu-list{
+    transform: translateY(0%);
+  }
+  .header__inner.header__inner--active path{
+    fill: #fff;
+    transition: all .6s;
+  }
+  .header__menu-list li+li {
+    margin-left: 0;
+  }
+  .header__menu-item{
+    padding: 15px 6px;;
+  }
+  .header__menu-item:hover{
+    border-bottom: none;
+  }
+  .header__menu-link{
+    font-size: 18px;
+    line-height: 22px;
+    color: #fff;
+  }
+  .header__menu-link:hover{
+    color:#FCBB08;
+  }
+  .menu__btn{
+    display: block;
+    padding: 0;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    margin-top: -8px;
+    position: relative;
+    z-index: 2;
+  }
 }
 
