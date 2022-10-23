@@ -85,6 +85,14 @@ body{
   margin: 0 auto;
 }
 
+.header{
+  position: fixed;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  background-color: #fff;
+}
+
 .header__inner{
   display: flex;
   justify-content: space-between;
@@ -477,6 +485,7 @@ body{
   position: absolute;
   top: 50%;
   transform: translateY(-145px);
+  cursor: pointer;
 }
 
 .slick-prev{
@@ -689,12 +698,21 @@ body{
   color: #ccc;
 }
 
+@media(max-width: 1440px){
+  .slick-prev{
+    right: 0;
+    transform: translateY(-20px);
+  }
+  .slick-next{
+    left: 0;
+    transform: translateY(-20px);
+  }
+}
+
 @media(max-width: 1200px){
-  .header__inner{
-    position: fixed;
-    left: 20px;
-    right: 20px;
-    z-index: 50;
+  .title{
+    font-size: 48px;
+    margin-bottom: 100px;
   }
   .logo{
     position: relative;
@@ -746,6 +764,91 @@ body{
     margin-top: -8px;
     position: relative;
     z-index: 2;
+  }
+  .content__title{
+    font-size: 56px;
+    line-height: 66px;
+  }
+  .about{
+    padding: 150px 0;
+  }
+  .about__inner{
+    display: block;
+  }
+  .expertise__info{
+    display: block;
+  }
+  .expertise__percent{
+    width: 100%;
+    margin: 0 0 30px 0;
+  }
+  .expertise__inner{
+    display: block;
+  }
+  .expertise__item{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .magic{
+    background: none;
+  }
+  .magic__inner{
+    margin: 0;
+    max-width: 100%;
+  }
+  .portfolio__button{
+    font-weight: 300;
+    margin-right: 0;
+  }
+  .team__inner{
+    display: block;
+  }
+  .team__item{
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .team__title{
+    margin: 0;
+  }
+  .team__img{
+    display: inline-block;
+  }
+}
+
+@media(max-width: 768px){
+  .content__title{
+      font-size: 44px;
+      line-height: 56px;
+  }
+  .slider__item-title{
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .portfolio__top{
+    display: block;
+  }
+  .portfolio__button{
+    font-size: 10px;
+    line-height: 20px;
+  }
+  .portfolio__inner{
+    column-count: 2;
+  }
+
+}
+
+@media(max-width: 425px){
+  .content__title {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .content__subtitle{
+    font-size: 12px;
+    line-height: 14px;
+  }
+  .slider__item-title{
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
